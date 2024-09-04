@@ -62,6 +62,10 @@ class OTPTextField extends StatefulWidget {
 
   final List<TextInputFormatter>? inputFormatter;
 
+  final String hint;
+
+  final TextStyle hintStyle;
+
   const OTPTextField({
     Key? key,
     this.length = 4,
@@ -69,6 +73,8 @@ class OTPTextField extends StatefulWidget {
     this.controller,
     this.fieldWidth = 30,
     this.spaceBetween = 0,
+    this.hint = '-',
+    this.hintStyle = TextStyle(),
     this.otpFieldStyle,
     this.hasError = false,
     this.keyboardType = TextInputType.number,
@@ -190,6 +196,8 @@ class _OTPTextFieldState extends State<OTPTextField> {
         focusNode: _focusNodes[index],
         obscureText: widget.obscureText,
         decoration: InputDecoration(
+           hintText: widget.hint,
+          hintStyle: widget.hintStyle,
           isDense: widget.isDense,
           filled: true,
           fillColor: _otpFieldStyle.backgroundColor,
