@@ -74,7 +74,7 @@ class OTPTextField extends StatefulWidget {
     this.fieldWidth = 30,
     this.spaceBetween = 0,
     this.hint = '-',
-    this.hintStyle = TextStyle(),
+    this.hintStyle = const TextStyle(color: Color(0xFFB4B5B8),
     this.otpFieldStyle,
     this.hasError = false,
     this.keyboardType = TextInputType.number,
