@@ -73,7 +73,7 @@ class OTPTextField extends StatefulWidget {
     this.controller,
     this.fieldWidth = 30,
     this.spaceBetween = 0,
-    this.hint = '-',
+    this.hint = '',
     this.hintStyle = const TextStyle(),
     this.otpFieldStyle,
     this.hasError = false,
